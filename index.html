@@ -7,7 +7,7 @@
   <meta name="description" content="Salajai Consultores ofrece servicios contables, nómina, consultoría fiscal, auditoría y asesoría legal-laboral con experiencia y atención personalizada.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,13 +15,19 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a href="#inicio" class="logo">
-        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="#0A2540"/>
+            <path d="M10 22V10h6a4 4 0 0 1 0 8h-2l4 4" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <span class="logo-text">Salajai <em>Consultores</em></span>
       </a>
       <nav class="nav" id="primaryNav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
+        <a href="#enfoque">Nuestro enfoque</a>
         <a href="#por-que-elegirnos">Por qué elegirnos</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-controls="primaryNav" aria-expanded="false">
@@ -32,29 +38,155 @@
 
   <main>
 
+    <!-- ===================== HERO ===================== -->
     <section id="inicio" class="hero">
       <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
       <div class="container hero-inner">
-        <p class="eyebrow">Firma de servicios contables y consultoría</p>
-        <h1>Salajai Consultores</h1>
-        <p class="hero-subtitle">Soluciones contables y consultoría empresarial para tu negocio. Acompañamos a empresas y emprendedores con rigor técnico, ética y atención cercana.</p>
-        <div class="hero-rule" aria-hidden="true"></div>
-        <p class="hero-tag">Contabilidad · Nómina · Fiscal · Auditoría · Legal-Laboral</p>
+        <div class="hero-text">
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow-dot"></span>
+            Firma de servicios contables y consultoría
+          </p>
+          <h1>
+            Acompañamos tu empresa con
+            <span class="hero-accent">precisión, ética y cercanía</span>
+          </h1>
+          <p class="hero-subtitle">
+            En Salajai Consultores brindamos soluciones contables, fiscales y legales con un enfoque integral, ayudándote a cumplir, planear y crecer con tranquilidad.
+          </p>
+
+          <ul class="hero-chips" aria-label="Áreas de práctica">
+            <li>Contabilidad</li>
+            <li>Nómina</li>
+            <li>Fiscal</li>
+            <li>Auditoría</li>
+            <li>Legal-Laboral</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Composición decorativa: tarjetas de balance + chart + sello -->
+          <div class="hv-stage">
+            <div class="hv-circle hv-circle--lg"></div>
+            <div class="hv-circle hv-circle--sm"></div>
+            <div class="hv-grid"></div>
+
+            <div class="hv-card hv-card--main">
+              <div class="hv-card-head">
+                <span class="hv-dot hv-dot--accent"></span>
+                <span class="hv-bar hv-bar--sm"></span>
+              </div>
+              <div class="hv-card-body">
+                <div class="hv-row"><span></span><span></span></div>
+                <div class="hv-row"><span></span><span></span></div>
+                <div class="hv-row"><span></span><span></span></div>
+                <div class="hv-row hv-row--total"><span></span><span></span></div>
+              </div>
+            </div>
+
+            <div class="hv-card hv-card--chart">
+              <div class="hv-chart-bars">
+                <span style="height:34%"></span>
+                <span style="height:58%"></span>
+                <span style="height:46%"></span>
+                <span style="height:78%"></span>
+                <span style="height:64%"></span>
+              </div>
+              <svg class="hv-chart-line" viewBox="0 0 120 60" fill="none">
+                <path d="M5 48 Q 25 22 45 30 T 90 18 T 115 8" stroke="#C9A961" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <circle cx="115" cy="8" r="3.5" fill="#C9A961"/>
+              </svg>
+            </div>
+
+            <div class="hv-badge">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="24" cy="24" r="17" stroke="#C9A961" stroke-width="1" stroke-dasharray="2 3"/>
+                <path d="M16 24l6 6 12-12" stroke="#C9A961" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path d="M0 0 L1440 0 L1440 60 Q720 0 0 60 Z" fill="#F8F6F0"/>
+        </svg>
       </div>
     </section>
 
+    <!-- ===================== DISTINTIVOS ===================== -->
+    <section class="distinctives" aria-label="Distintivos">
+      <div class="container distinctives-grid">
+        <div class="dist-item">
+          <div class="dist-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div>
+            <p class="dist-title">Trayectoria consolidada</p>
+            <p class="dist-text">Equipo con formación técnica y práctica en distintos sectores.</p>
+          </div>
+        </div>
+        <div class="dist-item">
+          <div class="dist-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="11" width="16" height="9" rx="2"/>
+              <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+            </svg>
+          </div>
+          <div>
+            <p class="dist-title">Confidencialidad estricta</p>
+            <p class="dist-text">Manejo seguro de la información de cada cliente, sin excepción.</p>
+          </div>
+        </div>
+        <div class="dist-item">
+          <div class="dist-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="dist-title">Enfoque preventivo</p>
+            <p class="dist-text">Anticipamos riesgos fiscales, laborales y contables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
     <section id="nosotros" class="about">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow eyebrow--dark">Sobre Nosotros</p>
-          <h2>Tu aliado estratégico en finanzas, fiscal y cumplimiento</h2>
-        </header>
-        <div class="about-grid">
+      <div class="container about-inner">
+        <aside class="about-side">
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow-dot eyebrow-dot--dark"></span>
+            Sobre Nosotros
+          </p>
+          <h2>Tu aliado estratégico en finanzas, fiscal y cumplimiento.</h2>
+          <p class="about-lead">
+            Somos una firma cercana y rigurosa. Combinamos experiencia técnica con atención personalizada para que tomes decisiones con confianza.
+          </p>
+          <div class="about-quote">
+            <span class="about-quote-mark" aria-hidden="true">“</span>
+            <p>El verdadero valor de una asesoría no está solo en cumplir, sino en anticipar y construir tranquilidad.</p>
+          </div>
+        </aside>
+
+        <div class="about-cards">
           <article class="about-card">
+            <div class="about-card-num">01</div>
             <h3>Misión</h3>
             <p>Brindar a nuestros clientes servicios contables, fiscales y de consultoría de la más alta calidad, con un enfoque personalizado que les permita tomar decisiones informadas, cumplir con sus obligaciones y crecer con tranquilidad.</p>
           </article>
           <article class="about-card">
+            <div class="about-card-num">02</div>
             <h3>Visión</h3>
             <p>Ser la firma consultora de referencia para empresas que valoran la excelencia técnica, la confidencialidad y la cercanía profesional, distinguiéndonos por la solidez de nuestro trabajo y la confianza que generamos.</p>
           </article>
@@ -62,31 +194,41 @@
       </div>
     </section>
 
+    <!-- ===================== SERVICIOS ===================== -->
     <section id="servicios" class="services">
+      <div class="services-bg" aria-hidden="true"></div>
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Nuestros Servicios</p>
+          <p class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Nuestros servicios
+          </p>
           <h2>Soluciones integrales para cada etapa de tu empresa</h2>
+          <p class="section-lead">Cinco áreas de práctica conectadas que cubren las necesidades operativas, fiscales y de cumplimiento de tu organización.</p>
         </header>
 
         <div class="services-grid">
 
           <article class="service-card">
+            <span class="service-num">01</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="3" y="4" width="18" height="16" rx="2"/>
                 <path d="M3 9h18"/>
-                <path d="M8 13h2"/>
-                <path d="M8 17h2"/>
-                <path d="M14 13h2"/>
-                <path d="M14 17h2"/>
+                <path d="M8 13h2M8 17h2M14 13h2M14 17h2"/>
               </svg>
             </div>
             <h3>Contabilidad</h3>
             <p>Registro contable, elaboración de estados financieros, conciliaciones bancarias y cierre mensual conforme a normas vigentes.</p>
+            <ul class="service-bullets">
+              <li>Estados financieros</li>
+              <li>Conciliaciones</li>
+              <li>Cierre mensual</li>
+            </ul>
           </article>
 
           <article class="service-card">
+            <span class="service-num">02</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="9" cy="8" r="3"/>
@@ -97,9 +239,15 @@
             </div>
             <h3>Nómina</h3>
             <p>Cálculo y timbrado de nómina, gestión de prestaciones, alta y movimientos ante IMSS e INFONAVIT.</p>
+            <ul class="service-bullets">
+              <li>Timbrado CFDI</li>
+              <li>IMSS / INFONAVIT</li>
+              <li>Prestaciones</li>
+            </ul>
           </article>
 
           <article class="service-card">
+            <span class="service-num">03</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
@@ -109,9 +257,15 @@
             </div>
             <h3>Consultoría Fiscal</h3>
             <p>Estrategia fiscal, declaraciones mensuales y anuales, y atención de requerimientos del SAT con enfoque preventivo.</p>
+            <ul class="service-bullets">
+              <li>Estrategia fiscal</li>
+              <li>Declaraciones</li>
+              <li>Atención SAT</li>
+            </ul>
           </article>
 
           <article class="service-card">
+            <span class="service-num">04</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="11" cy="11" r="7"/>
@@ -122,9 +276,15 @@
             </div>
             <h3>Auditoría</h3>
             <p>Auditoría interna y externa, revisión de cumplimiento normativo y dictámenes financieros con metodología rigurosa.</p>
+            <ul class="service-bullets">
+              <li>Interna y externa</li>
+              <li>Cumplimiento</li>
+              <li>Dictámenes</li>
+            </ul>
           </article>
 
           <article class="service-card">
+            <span class="service-num">05</span>
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 3v18"/>
@@ -136,16 +296,87 @@
             </div>
             <h3>Asesoría Legal-Laboral</h3>
             <p>Elaboración de contratos, gestión de relaciones laborales y asesoría en normativa vigente para tu plantilla.</p>
+            <ul class="service-bullets">
+              <li>Contratos</li>
+              <li>Relaciones laborales</li>
+              <li>Normativa vigente</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card--feature">
+            <div class="service-feature-content">
+              <p class="eyebrow eyebrow--light">
+                <span class="eyebrow-dot"></span>
+                Servicio integral
+              </p>
+              <h3>Acompañamiento continuo</h3>
+              <p>Cada cliente cuenta con un consultor asignado que conoce su operación, anticipa fechas críticas y coordina los servicios entre áreas.</p>
+            </div>
+            <svg class="service-feature-graphic" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+              <circle cx="60" cy="60" r="55" stroke="#C9A961" stroke-opacity="0.4" stroke-width="1"/>
+              <circle cx="60" cy="60" r="40" stroke="#C9A961" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="60" cy="60" r="25" stroke="#C9A961" stroke-width="1.5"/>
+              <circle cx="60" cy="60" r="6" fill="#C9A961"/>
+            </svg>
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- ===================== ENFOQUE ===================== -->
+    <section id="enfoque" class="approach">
+      <div class="container">
+        <header class="section-head section-head--left">
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow-dot eyebrow-dot--dark"></span>
+            Nuestro enfoque
+          </p>
+          <h2>Una metodología clara, en cuatro pasos</h2>
+          <p class="section-lead">Trabajamos con un proceso ordenado para que sepas exactamente cómo avanzamos contigo.</p>
+        </header>
+
+        <div class="approach-grid">
+
+          <div class="approach-step">
+            <div class="approach-num">01</div>
+            <div class="approach-line" aria-hidden="true"></div>
+            <h3>Diagnóstico</h3>
+            <p>Analizamos tu situación contable, fiscal y operativa para identificar oportunidades y riesgos.</p>
+          </div>
+
+          <div class="approach-step">
+            <div class="approach-num">02</div>
+            <div class="approach-line" aria-hidden="true"></div>
+            <h3>Plan de trabajo</h3>
+            <p>Definimos un plan a la medida con prioridades, responsables y fechas claras.</p>
+          </div>
+
+          <div class="approach-step">
+            <div class="approach-num">03</div>
+            <div class="approach-line" aria-hidden="true"></div>
+            <h3>Ejecución</h3>
+            <p>Implementamos los servicios contratados con seguimiento puntual y comunicación abierta.</p>
+          </div>
+
+          <div class="approach-step">
+            <div class="approach-num">04</div>
+            <h3>Mejora continua</h3>
+            <p>Revisamos resultados, ajustamos lo necesario y proponemos mejoras para el siguiente ciclo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POR QUÉ ELEGIRNOS ===================== -->
     <section id="por-que-elegirnos" class="why-us">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow eyebrow--dark">Por qué elegirnos</p>
+          <p class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Por qué elegirnos
+          </p>
           <h2>Cuatro razones que nos distinguen</h2>
         </header>
 
@@ -197,6 +428,10 @@
           </article>
 
         </div>
+
+        <div class="why-statement">
+          <p>“Más que un proveedor de servicios, somos un aliado a largo plazo para tu empresa.”</p>
+        </div>
       </div>
     </section>
 
@@ -205,7 +440,12 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-mark logo-mark--light" aria-hidden="true">S</span>
+        <span class="logo-mark logo-mark--light" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="#C9A961"/>
+            <path d="M10 22V10h6a4 4 0 0 1 0 8h-2l4 4" stroke="#0A2540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <div>
           <p class="footer-name">Salajai Consultores</p>
           <p class="footer-tag">Servicios contables y consultoría empresarial</p>
@@ -215,6 +455,7 @@
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
+        <a href="#enfoque">Nuestro enfoque</a>
         <a href="#por-que-elegirnos">Por qué elegirnos</a>
       </nav>
       <p class="footer-copy">&copy; <span id="footerYear">2026</span> Salajai Consultores. Todos los derechos reservados.</p>
