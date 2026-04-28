@@ -1,4 +1,4 @@
-# Salajai Consultores — Sitio web estático
+# Saljai Consultores — Sitio web estático
 
 **Fecha:** 2026-04-25
 **Tipo:** Sitio web institucional, una sola página, estático
@@ -6,7 +6,7 @@
 
 ## Propósito
 
-Construir un sitio web institucional para Salajai Consultores, una firma de servicios contables y consultoría empresarial. El sitio debe transmitir confianza y profesionalismo (estilo bufete/consultora seria), funcionar como vitrina informativa, y desplegarse en GitHub Pages sin pasos de build.
+Construir un sitio web institucional para Saljai Consultores, una firma de servicios contables y consultoría empresarial. El sitio debe transmitir confianza y profesionalismo (estilo bufete/consultora seria), funcionar como vitrina informativa, y desplegarse en GitHub Pages sin pasos de build.
 
 ## Alcance
 
@@ -56,12 +56,12 @@ salajai-consultores/
 ## Secciones del sitio
 
 ### 1. Header (fijo)
-- Logo textual: **Salajai Consultores**
+- Logo textual: **Saljai Consultores**
 - Navegación: Inicio · Nosotros · Servicios · Por qué elegirnos
 - En móvil: menú hamburguesa que despliega los enlaces
 
 ### 2. Hero
-- H1: "Salajai Consultores"
+- H1: "Saljai Consultores"
 - Subtítulo (debajo del H1): "Soluciones contables y consultoría empresarial para tu negocio"
 - Fondo: azul marino sólido (`--color-primary`) con un patrón geométrico sutil generado por CSS
 - Texto del hero en blanco hueso para contraste

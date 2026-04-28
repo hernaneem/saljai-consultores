@@ -1,6 +1,6 @@
-# Salajai Consultores
+# Saljai Consultores
 
-Sitio web institucional estático para **Salajai Consultores**, firma de servicios contables y consultoría empresarial.
+Sitio web institucional estático para **Saljai Consultores**, firma de servicios contables y consultoría empresarial.
 
 ## Estructura
 
