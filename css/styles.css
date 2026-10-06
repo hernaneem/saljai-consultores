@@ -60,6 +60,7 @@
 
     --text-primary: #1A1A2E;
     --text-secondary: #5B6472;
+    --text-body: #4B5563;
     --text-light: #FFFFFF;
     --border: #E5E7EB;
     --border-warm: #E8E0CC;
@@ -73,12 +74,12 @@
     --radius: 12px;
 
     /* Banner de cookies (pieza banner-cookies) con la marca */
-    --cookies-fondo: #0A2540;
-    --cookies-texto: #FFFFFF;
-    --cookies-acento: #C9A961;
-    --cookies-sobre-acento: #061A2E;
-    --cookies-borde: #C9A961;
-    --cookies-foco: #E2C98A;
+    --cookies-fondo: var(--primary);
+    --cookies-texto: var(--text-light);
+    --cookies-acento: var(--accent);
+    --cookies-sobre-acento: var(--primary-deep);
+    --cookies-borde: var(--accent);
+    --cookies-foco: var(--accent-soft);
     --cookies-radio: 12px;
     --cookies-fuente: var(--font-sans);
     --radius-lg: 20px;
@@ -1301,7 +1302,7 @@ footer button:focus-visible {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .page-hero { padding: 8rem 0 4rem; }
     .page-hero h1 { font-size: 2rem; }
 }
@@ -1336,7 +1337,7 @@ footer button:focus-visible {
     line-height: 1.3;
     margin: 2.5rem 0 0.75rem;
 }
-.legal-body p, .legal-body li { color: #4B5563; font-size: 1rem; }
+.legal-body p, .legal-body li { color: var(--text-body); font-size: 1rem; }
 .legal-body p { margin-bottom: 1rem; }
 .legal-body ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1rem; }
 .legal-body li { margin-bottom: 0.4rem; }
@@ -1351,7 +1352,7 @@ footer button:focus-visible {
 }
 
 .legal-table { width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 0.92rem; }
-.legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border: 1px solid var(--border); color: #4B5563; }
+.legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border: 1px solid var(--border); color: var(--text-body); }
 .legal-table th { background: var(--bg-light); color: var(--text-primary); font-weight: 600; }
 
 /* En móvil cada fila pasa a bloque con su etiqueta (sin scroll horizontal); desde 768px es tabla normal */
@@ -1365,7 +1366,7 @@ footer button:focus-visible {
 }
 
 /* En móvil el CTA sube justo debajo del título para quedar en la primera pantalla */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .hero-content { display: flex; flex-direction: column; align-items: center; }
     .hero-badge { order: 0; }
     .hero h1 { order: 1; margin-bottom: 1.25rem; }
