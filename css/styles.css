@@ -1,3 +1,45 @@
+/* Tipografías e íconos alojados en el sitio (subconjunto latino; sin pedir nada a Google ni a unpkg) */
+@font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/poppins-normal-400.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/poppins-normal-500.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/poppins-normal-600.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/poppins-normal-700.woff2) format('woff2')}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:swap;src:url(../fonts/poppins-normal-800.woff2) format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 700;font-display:swap;src:url(../fonts/playfair-normal.woff2) format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400 700;font-display:swap;src:url(../fonts/playfair-italic.woff2) format('woff2')}
+@font-face{font-family:boxicons;font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/boxicons-subset.woff2) format("woff2")}
+.bx{font-family:boxicons!important;font-weight:400;font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;display:inline-block;text-transform:none;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.bx-check-shield:before{content:"\ea48"}
+.bx-envelope:before{content:"\eac1"}
+.bxs-bank:before{content:"\ecba"}
+.bxs-book-bookmark:before{content:"\ecd9"}
+.bxs-briefcase:before{content:"\eceb"}
+.bxs-bullseye:before{content:"\ecf8"}
+.bxs-calculator:before{content:"\ecff"}
+.bxs-calendar-check:before{content:"\ed02"}
+.bxs-check-circle:before{content:"\ed31"}
+.bxs-check-shield:before{content:"\ed32"}
+.bxs-cog:before{content:"\ed52"}
+.bxs-conversation:before{content:"\ed64"}
+.bxs-edit:before{content:"\ed9b"}
+.bxs-file-blank:before{content:"\edaf"}
+.bxs-file-doc:before{content:"\edb1"}
+.bxs-group:before{content:"\edd6"}
+.bxs-lock-alt:before{content:"\ee0d"}
+.bxs-map-alt:before{content:"\ee18"}
+.bxs-medal:before{content:"\ee1b"}
+.bxs-message-alt-detail:before{content:"\ee26"}
+.bxs-pie-chart-alt-2:before{content:"\ee6f"}
+.bxs-quote-alt-left:before{content:"\ee81"}
+.bxs-receipt:before{content:"\ee89"}
+.bxs-report:before{content:"\ee8d"}
+.bxs-search-alt-2:before{content:"\ee9b"}
+.bxs-shield-alt-2:before{content:"\eea3"}
+.bxs-shield-plus:before{content:"\ef44"}
+.bxs-spreadsheet:before{content:"\eeb5"}
+.bxs-time-five:before{content:"\eec8"}
+.bxs-user-circle:before{content:"\eee5"}
+.bxs-user-detail:before{content:"\eee6"}
+
 /* ============================================
    Saljai Consultores — Design System
    ============================================ */
@@ -7,6 +49,7 @@
     --primary-deep: #061A2E;
     --accent: #C9A961;
     --accent-hover: #B89548;
+    --accent-text: #7A5F1E; /* mismo dorado, más oscuro, para texto sobre fondo claro (WCAG AA) */
     --accent-soft: #E2C98A;
 
     --bg-white: #FFFFFF;
@@ -15,7 +58,7 @@
     --bg-gradient: linear-gradient(135deg, #061A2E 0%, #0A2540 50%, #1B3D6B 100%);
 
     --text-primary: #1A1A2E;
-    --text-secondary: #6B7280;
+    --text-secondary: #5B6472;
     --text-light: #FFFFFF;
     --border: #E5E7EB;
     --border-warm: #E8E0CC;
@@ -395,7 +438,7 @@ nav {
     font-size: 0.7rem;
     padding: 2px 8px;
     background: rgba(201, 169, 97, 0.15);
-    color: var(--accent-hover);
+    color: var(--accent-text);
     border-radius: 6px;
     font-weight: 600;
 }
@@ -634,7 +677,7 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--accent-hover);
+    color: var(--accent-text);
     font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -863,7 +906,7 @@ nav {
 .about-meta-label {
     font-family: var(--font-display);
     font-style: italic;
-    color: var(--accent-hover);
+    color: var(--accent-text);
     font-size: 1.05rem;
     font-weight: 700;
     margin-bottom: 6px;
@@ -1028,7 +1071,7 @@ footer {
     gap: 12px;
 }
 
-.footer-bottom p { margin: 0; color: rgba(255, 255, 255, 0.45); }
+.footer-bottom p { margin: 0; color: rgba(255, 255, 255, 0.62); }
 
 /* ============================================
    Reveal animations
