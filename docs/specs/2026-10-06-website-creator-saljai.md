@@ -1,5 +1,5 @@
 # Saljai Consultores: los 20 puntos y la mudanza a Vercel — Spec
-> 2026-10-06 · Estado: en revisión de Hernán
+> 2026-10-06 · Estado: aprobado (VoBo Hernán 2026-10-06)
 
 ## Problema
 
@@ -41,9 +41,9 @@ El sitio conserva su diseño y su contenido, y se completan los 20 puntos con la
 
 **S5 (VoBo Hernán 2026-10-06, D6 de la skill):** Banner de cookies de la pieza con GA4 listo y apagado (`data-ga4-id=""`), así que el punto 19 queda en 🟡.
 
-**S6 (propuesta, Q9):** El repo `hernaneem/saljai-consultores` pasa a privado cuando la producción en Vercel esté arriba. Hoy es público.
+**S6 (VoBo Hernán 2026-10-06, Q9):** El repo `hernaneem/saljai-consultores` pasa a privado cuando la producción en Vercel esté arriba. Hoy es público.
 
-**S7 (propuesta):** Las páginas nuevas (`aviso-de-privacidad.html`, `terminos.html`, `404.html`) siguen el estilo de `index.html` y comparten `css/styles.css`. `vercel.json` activa `cleanUrls`, de modo que las rutas quedan sin `.html`, como pide el contrato de la skill.
+**S7 (VoBo Hernán 2026-10-06):** Las páginas nuevas (`aviso-de-privacidad.html`, `terminos.html`, `404.html`) siguen el estilo de `index.html` y comparten `css/styles.css`. `vercel.json` activa `cleanUrls`, de modo que las rutas quedan sin `.html`, como pide el contrato de la skill.
 
 ## Testing
 
@@ -79,4 +79,4 @@ Las revisiones a mano (banner, 375 px, CTA, textos legales) se hacen con Playwri
 
 ## Preguntas abiertas
 
-1. **S6 y S7** son propuestas (Q9 sigue abierta). Propuesta: aprobarlas tal cual. Contesta: Hernán.
+Ninguna. S6 y S7 se cerraron con el VoBo de Hernán el 2026-10-06.
