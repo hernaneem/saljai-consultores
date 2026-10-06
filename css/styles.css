@@ -1,4 +1,5 @@
 /* Tipografías e íconos alojados en el sitio (subconjunto latino; sin pedir nada a Google ni a unpkg) */
+/* Licencias de las fuentes autoalojadas: fonts/OFL.txt (Poppins, Playfair Display) y fonts/LICENSE-boxicons.txt (Boxicons) */
 @font-face{font-family:'Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/poppins-normal-400.woff2) format('woff2')}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/poppins-normal-500.woff2) format('woff2')}
 @font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/poppins-normal-600.woff2) format('woff2')}
