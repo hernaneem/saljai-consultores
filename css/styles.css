@@ -1350,9 +1350,19 @@ footer button:focus-visible {
     padding: 1rem 1.25rem;
 }
 
-.legal-table { width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 0.92rem; display: block; overflow-x: auto; }
+.legal-table { width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 0.92rem; }
 .legal-table th, .legal-table td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border: 1px solid var(--border); color: #4B5563; }
 .legal-table th { background: var(--bg-light); color: var(--text-primary); font-weight: 600; }
+
+/* En móvil cada fila pasa a bloque con su etiqueta (sin scroll horizontal); desde 768px es tabla normal */
+@media (max-width: 768px) {
+    .legal-table, .legal-table tbody, .legal-table tr, .legal-table td { display: block; width: 100%; }
+    .legal-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .legal-table tr { margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .legal-table td { border: 0; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+    .legal-table tr td:last-child { border-bottom: 0; }
+    .legal-table td::before { content: attr(data-label); display: block; font-weight: 600; color: var(--text-primary); font-size: 0.8rem; margin-bottom: 0.15rem; }
+}
 
 /* En móvil el CTA sube justo debajo del título para quedar en la primera pantalla */
 @media (max-width: 600px) {
