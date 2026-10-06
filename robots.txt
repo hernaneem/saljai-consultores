@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saljai-consultores.vercel.app/sitemap.xml
