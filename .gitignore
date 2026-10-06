@@ -1,0 +1,8 @@
+# Variables de entorno: nunca en git (la plantilla .env.example sí)
+.env
+.env.*
+!.env.example
+
+# Vercel y sistema
+.vercel
+.DS_Store

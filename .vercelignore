@@ -1,0 +1,5 @@
+# Lo que no es el sitio no se publica (punto 3 de website-creator)
+docs/
+CLAUDE.md
+README.md
+.gitignore
